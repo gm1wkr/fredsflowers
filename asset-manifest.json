@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fredsflowers/static/css/main.53b20e6d.css",
+    "main.js": "/fredsflowers/static/js/main.82c2a58a.js",
+    "static/js/787.d909d38b.chunk.js": "/fredsflowers/static/js/787.d909d38b.chunk.js",
+    "index.html": "/fredsflowers/index.html",
+    "main.53b20e6d.css.map": "/fredsflowers/static/css/main.53b20e6d.css.map",
+    "main.82c2a58a.js.map": "/fredsflowers/static/js/main.82c2a58a.js.map",
+    "787.d909d38b.chunk.js.map": "/fredsflowers/static/js/787.d909d38b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53b20e6d.css",
+    "static/js/main.82c2a58a.js"
+  ]
+}
