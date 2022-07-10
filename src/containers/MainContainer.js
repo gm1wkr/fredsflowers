@@ -89,9 +89,9 @@ const MainContainer = () => {
     <Header user={user} />
 
     <Routes>
-      <Route path="/" element={<HomePage/>} />
+      <Route path="/fredsflowers" element={<HomePage/>} />
       <Route 
-        path="/shop" 
+        path="/fredsflowers/shop" 
         element={<ShopContainer 
           user={user} 
           basket={basket}
@@ -101,7 +101,7 @@ const MainContainer = () => {
           removeFromBasket={removeFromBasket}
         />} 
       />
-      <Route path="/checkout" element={<CheckoutContainer 
+      <Route path="/fredsflowers/checkout" element={<CheckoutContainer 
         user={user} 
         basket={basket}
         basketTotal={basketTotal}
