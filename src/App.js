@@ -1,6 +1,7 @@
 import React from 'react';
+import GlobalStyle from './globalStyles';
 
-import './App.css';
+// import './App.css';
 import MainContainer from './containers/MainContainer';
 
 
@@ -9,10 +10,10 @@ import MainContainer from './containers/MainContainer';
 
 function App() {
   return (
-  <MainContainer />
-
-
-
+    <>
+    <GlobalStyle />
+    <MainContainer />
+    </>
   );
 }
 

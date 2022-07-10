@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import Product from './Product';
 import styled from 'styled-components';
-import ProductSelect from "./ProductSelect";
+import ProductSelect from "./CategorySelect";
 
 const ProductGrid = styled.div`
     display: grid;
@@ -12,12 +12,25 @@ const ProductGrid = styled.div`
 
 const ProductList = ({ productList, addToBasket }) => {
 
-    const productNodes = productList.map( (product) =>  <Product key={product.id} product={product} addToBasket={addToBasket} />)
+    const [selectedCategory, setSelectedCategory] = useState("All");
+
+    const handleCategorySelect = ( category ) => {
+        setSelectedCategory(category);
+    }
+
+    // filter by category.
+    const productListFiltered = productList.filter( (filteredProduct) => filteredProduct.category === selectedCategory)
+    // console.log(productListFiltered);
+    
+    const productsToShow = selectedCategory === "All" ? productList : productListFiltered;
+    const productNodes = productsToShow.map( (product) => <Product key={product.id} product={product} addToBasket={addToBasket} />)
+   
+ 
 
   return ( 
 
         <div>
-            <ProductSelect productList={productList} />
+            <ProductSelect productList={productList} handleCategorySelect={handleCategorySelect} />
             <ProductGrid>
                 {productNodes}
             </ProductGrid>

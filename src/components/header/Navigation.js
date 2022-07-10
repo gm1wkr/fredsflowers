@@ -6,7 +6,7 @@ const NavBar = styled.nav`
 `;
 
 const NavList = styled.ul`
-  background-color: #575c00;
+  background-color: transparent;
   list-style-type: none;
   margin: 0;
   display: flex;
@@ -20,11 +20,13 @@ const NavItem = styled.li`
 
 const NavLink = styled.a`
   color: rgb(39, 41, 0);
-  background-color: hsl(63, 42%, 74%);
+  text-decoration: none;
+  background-color: hsla(63, 42%, 74%, 0.648);
   height: 100%;
-  padding: 0.5rem 2rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  padding: 0rem 2rem;
+  border-top: 2px solid rgba(39, 41, 0, 0.695);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   transition: all 0.3s linear;
   box-shadow: 0 0 1.1rem 0rem rgb(87, 92, 0);
   &:hover {

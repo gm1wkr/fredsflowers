@@ -5,7 +5,7 @@ import CardImage from './CardImage';
 const Card = styled.div`
   margin: 2rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(87, 92, 0, 0.16);
+  background-color: rgba(83, 87, 0, 0.088);
   border-radius: 1rem;;
   display: flex;
   flex-direction: column;
@@ -15,20 +15,29 @@ const Card = styled.div`
   box-shadow: 2px 2px 12px -1px rgba(0,0,0,0.5);
 `
 
-const CardHeader = styled.h3``
+const CardHeader = styled.h3`
+margin: 0;
+margin-top: 0.6rem;;
+`;
 
 const CardDescription = styled.p`
 margin: 1rem;`
 
 const CardPrice = styled.p`
 font-size: 1.4rem;
+margin: 0;
 padding-bottom: 0.4rem;
 border-bottom: 1px solid rgba(87, 92, 0, 0.6);
 `
 
+const CardCategory = styled.div`
+  margin: 0;
+  padding:0;
+`;
+
 const CardButton = styled.button`
   display: inline-block;
-  margin-bottom: 1rem;
+  margin : 1rem;
   padding: .5rem 1rem; 
   font-size: 1.2rem;
   border: none;
@@ -49,8 +58,8 @@ const Product = ({ product, addToBasket }) => {
 
   return (
       <Card>
-        
           <CardHeader >{product.name}</CardHeader>
+          <CardCategory>{product.category}</CardCategory>
           <CardImage src={product.image} alt={product.name} />
           <CardDescription >{product.description}</CardDescription>
           <CardPrice >£{product.price.toFixed(2)}</CardPrice>

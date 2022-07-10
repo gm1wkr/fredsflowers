@@ -55,7 +55,7 @@ const BasketItem = ({ basketItem, removeFromBasket }) => {
         <ListItem>
             <h3><strong>{basketItem.quantity}</strong> <span>{basketItem.name}</span> </h3>
             <ItemDetail>
-                <span class="price">£{itemPrice.toFixed(2)}</span>
+                <span className="price">£{itemPrice.toFixed(2)}</span>
                 <span>
                     <RemoveButton onClick={() => removeFromBasket(basketItem)} >
                         &#10060;&nbsp; 

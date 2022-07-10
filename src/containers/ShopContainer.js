@@ -10,6 +10,7 @@ const MainArea = styled.main`
 
 const ShopContainer = ({ user, productList, basket, basketTotal, addToBasket, removeFromBasket }) => {
   return(
+    
     <MainArea>
       <ProductList productList={productList} addToBasket={addToBasket} />
       <Basket basket={basket} basketTotal={basketTotal} removeFromBasket={removeFromBasket} />

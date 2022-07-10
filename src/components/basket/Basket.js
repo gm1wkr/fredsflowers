@@ -6,7 +6,7 @@ import CheckoutLink from './CheckoutLink';
 
 const BasketWrap = styled.div`
   min-width: 20vw;
-  margin-top: 1.6rem;
+  margin-top: 0rem;
   margin-right: 1rem;;
   text-align: right;
 `
